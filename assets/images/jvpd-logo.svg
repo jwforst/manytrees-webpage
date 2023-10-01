@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="600"
+   height="132"
+   viewBox="0 0 158.75 34.925005"
+   version="1.1"
+   id="svg12"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="jvpd-logo-master.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     inkscape:showpageshadow="false"
+     borderlayer="false"
+     showborder="true"
+     inkscape:zoom="2"
+     inkscape:cx="213.75"
+     inkscape:cy="84.250001"
+     inkscape:window-width="2558"
+     inkscape:window-height="1368"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g363"
+     inkscape:lockguides="false"
+     inkscape:snap-text-baseline="true"
+     inkscape:deskcolor="#d1d1d1"
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid60545" />
+  </sodipodi:namedview>
+  <defs
+     id="defs9" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(2.410301,0,0,2.8378564,-4.817591,-6.0649248)"
+       id="g16"
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+      <g
+         id="g363">
+        <g
+           id="g8678">
+          <g
+             transform="matrix(0.99852152,0,0,0.92061929,-17.133962,-3.1139073)"
+             id="g10">
+            <g
+               transform="matrix(1.23,0,0,1.11,-3.4909782,-1.9842898)"
+               id="g4">
+              <text
+                 x="18"
+                 y="15"
+                 style="font-size:10px;font-family:Michroma;fill:#2ccf17"
+                 id="text2">J</text>
+            </g>
+            <g
+               transform="matrix(1.23,0,0,1,-7.70042,0)"
+               id="g8">
+              <text
+                 x="29.524622"
+                 y="12.092717"
+                 style="font-size:10px;font-family:Michroma;fill:#2ccf17"
+                 id="text6">ourney</text>
+            </g>
+          </g>
+          <g
+             transform="matrix(1.3685649,0,0,0.82476397,20.593935,10.238327)"
+             id="g14">
+            <text
+               x="6"
+               y="3.5"
+               style="font-size:4.375px;font-family:Raleway-Regular, Raleway, sans-serif;fill:#ffd700"
+               id="text12">ViewportDocs</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

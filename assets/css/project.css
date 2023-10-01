@@ -1,0 +1,645 @@
+/* This project uses the BEM CSS naming convention. */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.html {
+  min-height: 100vh;
+}
+
+/* ===== ===== ===== body block  ===== ===== ===== */
+.body {
+  min-height: 100vh;
+  overflow: hidden;
+  font-size: var(--root-font-size);
+  background-color: var(--main-background);
+}
+
+/* NOTE */
+/* div.container.position is set to absolute,    */
+/* header.header.position is set to absolute,    */
+/* nav.navbar.position is set to absolute,       */
+/* main.main.position is set to absolute and     */
+/* footer.footer.position is set to absolute.    */
+/* PURPOSE                                       */
+/* This ensures that header, navbar, and footer  */
+/* remain fixed at top and bottom of the body    */
+/* viewport and only the Main element contents   */
+/* will display a scroll bar when the content    */
+/* overflows main and must be scrolled to see    */
+/* it all.  */
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 1366px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--main-border);
+  box-shadow: var(--shadow-blur);
+}
+
+/* ===== ===== ===== header block  ===== ===== ===== */
+.header {
+  height: 46px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--header-background);
+  border-color: var(--header-border);
+}
+
+.header__logo {
+  align-self: center;
+  width: 157px;
+  height: 36px;
+}
+
+/* ===== ===== ===== navbar block  ===== ===== ===== */
+.navbar {
+  position: absolute;
+  top: 46px;
+  bottom: 145px;
+  left: 0px;
+  right: 0px;
+  height: 45px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  padding: 0rem;
+  background-color: var(--navbar-background);
+  border-color: var(--navbar-border);
+  box-shadow: var(--shadow-blur);
+}
+
+.navbar__a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 0 0 0 0;
+  border-bottom-color: var(--navbar-background);
+  margin: 4px 8px 4px 8px;
+  padding: 4px;
+  color: var(--navbar-text);
+}
+
+/* mouse over link */
+.navbar__a:hover {
+  color: gold;
+}
+
+/* selected link */
+.navbar__a:active {
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-bottom-color: gold;
+  color: gold;
+  background-color: var(--card-background-1);
+}
+
+/* ===== ===== ===== main block  ===== ===== ===== */
+.main {
+  position: absolute;
+  top: 92px;
+  bottom: 64px;
+  left: 0px;
+  right: 0px;
+  overflow: auto;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  background-color: var(--main-background);
+  border-color: var(--main-border);
+  box-shadow: var(--shadow-blur);
+}
+
+/* ===== ===== ===== footer block  ===== ===== ===== */
+.footer {
+  min-height: 63px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  justify-content: flex-end;
+  align-content: center;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  background-color: var(--footer-background);
+  border-color: var(--footer-border);
+  box-shadow: var(--shadow-blur);
+}
+
+.footer--grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  /* grid-template-rows: auto; */
+  grid-template-areas:
+    "text-group"
+    "logo-group";
+}
+
+.footer__text-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: auto;
+  align-content: center;
+  margin: 3px;
+  padding: 1px 1px 1px 1px;
+}
+
+.footer__text {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 3px;
+  padding: 0px 1px 3px 1px;
+  color: var(--footer-text);
+}
+
+.footer__logo-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3px;
+  padding: 1px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer__logo {
+  align-self: center;
+  width: 157px;
+  height: 36px;
+}
+
+/* ===== ===== ===== card-showcase block  ===== ===== ===== */
+.card-showcase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--color-background-a01);
+  border: 1px solid var(--color-border-a01);
+  box-shadow: var(--shadow);
+}
+
+.card-showcase > * {
+  flex: 1 1 300px;
+}
+
+.card-showcase__image-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-showcase__image {
+  width: 100%;
+}
+
+.card-showcase__text-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-showcase__image-left {
+  width: 46.8%;
+  margin: 0rem 1rem 0.75rem 2.5rem;
+  float: left;
+}
+
+.card-showcase__image-right {
+  width: 46.8%;
+  margin: 0rem 0rem 0.75rem 0.3rem;
+  float: right;
+}
+
+/* ===== ===== ===== card wrapper  ===== ===== ===== */
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0rem;
+  margin: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+  background-color: var(--color-background-a03);
+}
+
+.card-wrapper > * {
+  /* flex-basis: 100%; */
+  flex: 1 1 300px;
+}
+
+.card-wrapper__text-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem;
+  padding: 0rem 1rem 0rem 0rem;
+
+  border-radius: 10px;
+  background-color: var(--color-background-a01);
+  border: 1px solid var(--color-border-a01);
+  box-shadow: var(--shadow);
+}
+
+/* ===== ===== ===== media queries  ===== ===== ===== */
+@media (max-width: 621px) {
+  .navbar {
+    top: 46px;
+    bottom: 136px;
+    height: 92px;
+  }
+
+  .main {
+    top: 139px;
+    bottom: 84px;
+    /* height: 90px; */
+  }
+
+  .footer {
+    height: 84px;
+  }
+}
+
+/* ===== ===== ===== font faces  ===== ===== ===== */
+/* Headings */
+@font-face {
+  font-family: "Michroma";
+  src: url(../fonts/Michroma-Regular.ttf);
+}
+
+/* Body */
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Regular.ttf), url(../fonts/Raleway-Italic.ttf), url(../fonts/Raleway-Bold.ttf),
+    url(../fonts/Raleway-BoldItalic.ttf);
+}
+
+/* Monospace */
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../fonts/RobotoMono-VariableFont_wght.ttf), url(../fonts/RobotoMono-Italic-VariableFont_wght.ttf);
+}
+
+/* ==== ==== ==== ==== Font Families ==== ==== ==== ==== */
+/* fontFamily1 is the default. */
+.font-family1 {
+  --heading-font-family: "Michroma";
+  --paragraph-font-family: "Raleway";
+  --mono-font-family: "Roboto Mono";
+  --root-font-size: 16px;
+}
+
+/* ==== ==== ==== ==== Color Theme ==== ==== ==== ==== */
+
+/* Radium */
+.color-theme7 {
+  /* colors for <header> and <footer> background, border, headings, and text */
+  --color-background-b01: hsl(200, 18%, 12%);
+  --color-border-b01: hsl(0, 0%, 0%);
+  --color-h1-h6-b01: hsl(113, 80%, 45%);
+  --color-text-b01: hsl(0, 0%, 80%);
+  /* colors for <nav> background, border, headings, and text */
+  --color-background-b02: hsl(203, 20%, 16%);
+  --color-border-b02: hsl(0, 0%, 0%);
+  --color-h1-h6-b02: hsl(113, 80%, 45%);
+  --color-text-b02: hsl(0, 0%, 80%);
+  --color-button-b02: hsl(217, 10%, 49%);
+  /* colors for <main> background, border, headings, and text */
+  --color-background-b03: hsl(200, 20%, 21%);
+  --color-border-b03: hsl(0, 14%, 3%);
+  --color-h1-h6-b03: #2ccf17;
+  --color-text-b03: hsl(0, 0%, 80%);
+  /* colors for "cards" background, border, headings, and text */
+  --color-background-a01: hsl(198, 18%, 25%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(113, 80%, 45%);
+  --color-text-a01: hsl(0, 0%, 80%);
+  /* SVG logo colors placed manually in svg logo file*/
+  --color-logo-viewport: gold;
+  --color-logo-journey: hsl(113, 80%, 45%);
+}
+
+/* Transfer theme colors to layout elements */
+/* root */
+:root {
+  --header-background: var(--color-background-b01);
+  --header-border: var(--color-border-b01);
+  --header-h1-h6: var(--color-h1-h6-b01);
+  --header-text: var(--color-text-b01);
+
+  --navbar-background: var(--color-background-b02);
+  --navbar-border: var(--color-border-b02);
+  --navbar-h1-h6: var(--color-h1-h6-b02);
+  --navbar-text: var(--color-text-b02);
+  --button-background: var(--color-button-b02);
+
+  --main-background: var(--color-background-b03);
+  --main-border: var(--color-border-b03);
+  --main-h1-h6: var(--color-h1-h6-b03);
+  --main-text: var(--color-text-b03);
+
+  --footer-background: var(--color-background-b01);
+  --footer-border: var(--color-border-b01);
+  --footer-h1-h6: var(--color-h1-h6-b01);
+  --footer-text: var(--color-text-b01);
+
+  --card-background-1: var(--color-background-a01);
+  --card-border-1: var(--color-border-a01);
+  --card-h1-h6-1: var(--color-h1-h6-a01);
+  --card-text-1: var(--color-text-a01);
+
+  /* creates a shadow-like blur */
+  /* shadow: h-offset, v-offset, blur, color */
+  --shadow-blur: 0px 0px 7px hsla(0, 0%, 0%, 0.5);
+  --shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+/* ===== ===== ===== Headings ===== ===== =====*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: left;
+  line-height: 110%;
+  margin: 0rem;
+  padding: 0rem;
+  color: var(--main-h1-h6);
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 2rem 0rem 0.75rem 0rem;
+}
+
+h1.card {
+  font-size: 1.4142rem;
+  margin: 0rem 0rem 0.75rem 0rem;
+}
+
+h1.title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0rem 3rem 0rem;
+}
+
+h2 {
+  font-size: 1.7818rem;
+  margin: 2rem 0rem 0.75rem 0.5rem;
+}
+
+h2.card {
+  font-size: 1.2599rem;
+  margin: 2rem 0rem 0.75rem 0.5rem;
+}
+
+h3 {
+  font-size: 1.2599rem;
+  margin: 2rem 0rem 0.75rem 1rem;
+}
+
+h3.card {
+  font-size: 1.1225rem;
+  margin: 2rem 0rem 0.75rem 1rem;
+}
+
+h4 {
+  font-size: 1.4142rem;
+  margin: 2rem 0rem 0.75rem 1.5rem;
+}
+
+h4.slogan-title {
+  text-align: center;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 1rem 1rem 1rem 1rem;
+  color: var(--color-logo-viewport);
+}
+
+h5 {
+  font-size: 1.2599rem;
+  margin: 2rem 0rem 0.75rem 2rem;
+}
+
+h6 {
+  font-size: 1.1225rem;
+  margin: 2rem 0rem 0.75rem 2.5rem;
+}
+
+/*  ===== ===== ===== Body Text  ===== ===== ===== */
+a,
+button,
+caption,
+dd,
+dt,
+figcaption,
+label,
+legend,
+li,
+ol,
+p,
+summary,
+th,
+td,
+ul {
+  font-family: var(--paragraph-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  line-height: 120%;
+  word-break: normal;
+  margin: 0rem;
+  padding: 0rem;
+  color: var(--main-text);
+}
+
+/* ===== ===== ===== p ===== ===== ===== */
+p {
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  color: var(--color-text-b03);
+}
+
+/* ===== ===== ===== code ===== ===== ===== */
+
+code {
+  font-family: var(--mono-font-family);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  line-height: 115%;
+  word-break: normal;
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  color: var(--color-text-b03);
+}
+
+/* ===== ===== ===== caption ===== ===== ===== */
+/* See layout.css "table fonts" for caption */
+
+/* ===== ===== ===== dd and dt ===== ===== ===== */
+dd {
+  margin: 0.25rem 0.5rem 0.75rem 3.5rem;
+}
+
+dt {
+  font-size: 0.95rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: 1rem 0.5rem 0rem 2.5rem;
+  padding: 0rem;
+}
+
+dd.doc-info {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0rem 0.5rem 0.5rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  color: var(--color-text-b02);
+}
+
+dt.doc-info {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0.5rem 0.5rem 0rem 0.25rem;
+  padding: 0rem 0rem 0rem 0rem;
+  color: var(--color-text-b02);
+}
+
+/* ===== ===== ===== label ===== ===== ===== */
+label {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+/* ol, ul and li*/
+
+ol {
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+ul {
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+li {
+  margin: 0rem 0rem 0.25rem 1.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* summary */
+summary {
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+details > p {
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-text03);
+}
+
+/* ===== ===== ===== figcaption ===== ===== ===== */
+/* see layout.css "figcaption" for th and td styles*/
+
+/* ===== ===== ===== td, th ===== ===== ===== */
+/* see layout.css "table fonts" for th and td styles*/
+
+/* Development borders*/
+/* These are development styles for creating borders around display areas that are associated with an element. Use these to temporarily highlight the element container area during development. */
+
+/* Example: <div class="b4 d r"> creates a border, 4px wide, dashes, red.*/
+/* Try these: b1 s g, b2 d b, b3 d k, b5 s m.  */
+
+/* border width class assignments */
+.b1 {
+  border-width: 1px;
+}
+
+.b2 {
+  border-width: 2px;
+}
+
+.b3 {
+  border-width: 3px;
+}
+
+.b4 {
+  border-width: 4px;
+}
+
+.b5 {
+  border-width: 5px;
+}
+
+/* border style class assignments */
+.d {
+  border-style: dashed;
+}
+
+.s {
+  border-style: solid;
+}
+
+/* border color class assignments (RGB and CMYK) */
+.r {
+  border-color: hsl(0, 100%, 50%);
+}
+
+.g {
+  border-color: hsl(120, 100%, 50%);
+}
+
+.b {
+  border-color: hsl(240, 100%, 50%);
+}
+
+.c {
+  border-color: hsl(180, 100%, 50%);
+}
+
+.m {
+  border-color: hsl(300, 100%, 50%);
+}
+
+.y {
+  border-color: hsl(60, 100%, 50%);
+}
+
+.k {
+  border-color: hsl(0, 0%, 10%);
+}

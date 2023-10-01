@@ -1,0 +1,382 @@
+/* FONT FAMILIES AND COLOR THEMES */
+
+/* HTML Root Element Classes
+The <html> element in index.html is the root element where font-family0 and color-theme0 are assigned as fallback classes. */
+
+/* DOM Class List
+JavaScript is used to manage setup and user-selection of font family and theme assignment to the DOM classList. The DOM classList contains The initial startup classes and then the user-selected classes*/
+
+/* FONT FACES */
+
+/* Headings */
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.ttf),
+    url(../fonts/OpenSans-Italic.ttf),
+    url(../fonts/OpenSans-Bold.ttf),
+    url(../fonts/OpenSans-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Michroma";
+  src: url(../fonts/Michroma-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url(../fonts/LibreBaskerville-Regular.ttf),
+    url(../fonts/LibreBaskerville-Italic.ttf), url(../fonts/LibreBaskerville-Bold.ttf),
+    url(../fonts/LibreBaskerville-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: url(../fonts/Philosopher-Regular.ttf), url(../fonts/Philosopher-Italic.ttf),
+    url(../fonts/Philosopher-Bold.ttf), url(../fonts/Philosopher-BoldItalic.ttf);
+}
+
+/* Body */
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Regular.ttf), url(../fonts/Raleway-Italic.ttf),
+    url(../fonts/Raleway-Bold.ttf), url(../fonts/Raleway-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf), url(../fonts/Roboto-Italic.ttf),
+    url(../fonts/Roboto-Bold.ttf), url(../fonts/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url(../fonts/LibreFranklin-Regular.ttf), url(../fonts/LibreFranklin-Italic.ttf),
+    url(../fonts/LibreFranklin-Bold.ttf), url(../fonts/LibreFranklin-BoldItalic.ttf);
+}
+
+/* Monospace */
+@font-face {
+  font-family: "Roboto Mono", monospace;
+  src: url(../fonts/RobotoMono-VariableFont_wght.ttf),
+    url(../fonts/RobotoMono-Italic-VariableFont_wght.ttf);
+}
+
+/* ==== ==== ==== ==== Font Families ==== ==== ==== ==== */
+/* font-family0 is the default. */
+
+.fontFamily0 {
+  --heading-font-family: "Open Sans";
+  --paragraph-font-family: "Open Sans";
+  --mono-font-family: "Roboto Mono";
+  --root-font-size: 16px;
+}
+
+.fontFamily1 {
+  --heading-font-family: "Michroma";
+  --paragraph-font-family: "Raleway";
+  --mono-font-family: "Roboto Mono";
+  --root-font-size: 16px;
+}
+
+.fontFamily2 {
+  --heading-font-family: "Libre Baskerville";
+  --paragraph-font-family: "Roboto";
+  --mono-font-family: "Roboto Mono";
+  --root-font-size: 16px;
+}
+
+.fontFamily3 {
+  --heading-font-family: "Philosopher";
+  --paragraph-font-family: "Libre Franklin";
+  --mono-font-family: "Roboto Mono";
+  --root-font-size: 16px;
+}
+
+/* ==== ==== ==== ==== Color Themes ==== ==== ==== ==== */
+/* Sunny Gray*/
+.colorTheme0 {
+  /* Gray_30 */
+  --color-background-b01: hsl(218, 31%, 90%);
+  --color-border-b01: hsl(0, 0%, 60%);
+  --color-h1-h6-b01: hsl(201, 80%, 18%);
+  --color-text-b01: hsl(0, 0%, 0%);
+  /* Gray_20 */
+  --color-background-b02: hsl(216, 33%, 94%);
+  --color-border-b02: hsl(0, 0%, 60%);
+  --color-h1-h6-b02: hsl(201, 80%, 18%);
+  --color-text-b02: hsl(0, 0%, 0%);
+  --color-button-b02: hsl(218, 31%, 90%);
+  /* Gray_10 */
+  --color-background-b03: hsl(216, 33%, 97%);
+  --color-border-b03: hsl(0, 0%, 60%);
+  --color-h1-h6-b03: hsl(201, 80%, 18%);
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Gray_30 */
+  --color-background-a01: hsl(218, 31%, 90%);
+  --color-border-a01: hsl(0, 0%, 60%);
+  --color-h1-h6-a01: hsl(201, 80%, 18%);
+  --color-text-a01: hsl(0, 0%, 0%);
+}
+
+/* Stormy Gray */
+.colorTheme1 {
+  /* Gray_70 */
+  --color-background-b01: hsl(217, 10%, 49%);
+  --color-border-b01: hsl(0, 0%, 40%);
+  --color-h1-h6-b01: hsl(0, 0%, 100%);
+  --color-text-b01: hsl(0, 0%, 100%);
+  /* Gray_60 */
+  --color-background-b02: hsl(217, 15%, 61%);
+  --color-border-b02: hsl(0, 0%, 40%);
+  --color-h1-h6-b02: hsl(204, 38%, 28%);
+  --color-text-b02: hsl(0, 0%, 0%);
+  --color-button-b02: hsl(217, 22%, 74%);
+  /* Gray_20 */
+  --color-background-b03: hsl(216, 33%, 94%);
+  --color-border-b03: hsl(0, 0%, 40%);
+  --color-h1-h6-b03: hsl(204, 38%, 28%);
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Gray_30 */
+  --color-background-a01: hsl(218, 31%, 90%);
+  --color-border-a01: hsl(0, 0%, 40%);
+  --color-h1-h6-a01: hsl(204, 38%, 28%);
+  --color-text-a01: hsl(0, 0%, 0%);
+}
+
+/* Thunderhead*/
+.colorTheme2 {
+  /* Slate_80*/
+  --color-background-b01: #2c4d63;
+  --color-border-b01: hsl(0, 0%, 10%);
+  --color-h1-h6-b01: hsl(0, 0%, 100%);
+  --color-text-b01: hsl(0, 0%, 100%);
+  /* Slate_70*/
+  --color-background-b02: hwb(205 22% 49%);
+  --color-border-b02: hsl(0, 0%, 10%);
+  --color-h1-h6-b02: hsl(0, 0%, 100%);
+  --color-text-b02: hsl(0, 0%, 90%);
+  /* --color-button-b02: hsl(205, 33%, 50%); */
+  --color-button-b02: hsl(205, 33%, 50%);
+  /* Slate_10*/
+  --color-background-b03: hsl(198, 38%, 95%);
+  --color-border-b03: hsl(0, 0%, 20%);
+  --color-h1-h6-b03: #2c4d63;
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Slate_50*/
+  --color-background-a01: hsl(205, 42%, 55%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(206, 83%, 72%);
+  --color-text-a01: hsl(0, 0%, 100%);
+}
+
+/* Spruce */
+.colorTheme3 {
+  /* Teal_100 */
+  --color-background-b01: hsl(176, 65%, 10%);
+  --color-border-b01: hsl(0, 0%, 10%);
+  --color-h1-h6-b01: hsl(33, 88%, 83%);
+  --color-text-b01: hsl(33, 88%, 83%);
+  /* Teal_90 */
+  --color-background-b02: hsl(176, 69%, 14%);
+  --color-border-b02: hsl(0, 0%, 10%);
+  --color-h1-h6-b02: hsl(33, 88%, 83%);
+  --color-text-b02: hsl(0, 0%, 90%);
+  --color-button-b02: hsl(169, 28%, 46%);
+  /* Teal_10 */
+  --color-background-b03: hsl(177, 54%, 93%);
+  --color-border-b03: hsl(0, 0%, 10%);
+  --color-h1-h6-b03: hsl(33, 75%, 17%);
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Teal_30 */
+  --color-background-a01: hsl(169, 28%, 46%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(33, 75%, 17%);
+  --color-text-a01: hsl(0, 0%, 100%);
+}
+
+/* Bristlecone */
+.colorTheme4 {
+  /* Green_100 */
+  --color-background-b01: hsl(143, 43%, 12%);
+  --color-border-b01: hsl(0, 0%, 10%);
+  --color-h1-h6-b01: hsl(33, 88%, 83%);
+  --color-text-b01: hsl(33, 88%, 83%);
+  /* Green_90 */
+  --color-background-b02: hsl(144, 49%, 16%);
+  --color-border-b02: hsl(0, 0%, 10%);
+  --color-h1-h6-b02: hsl(33, 88%, 83%);
+  --color-text-b02: hsl(0, 0%, 90%);
+  --color-button-b02: hsl(137, 21%, 53%);
+  /* Green_10 */
+  --color-background-b03: hsl(177, 54%, 93%);
+  --color-border-b03: hsl(0, 0%, 10%);
+  --color-h1-h6-b03: hsl(144, 52%, 21%);
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Green_30 */
+  --color-background-a01: hsl(144, 57%, 67%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(144, 52%, 21%);
+  --color-text-a01: hsl(0, 0%, 0%);
+}
+
+/* Red Tide */
+.colorTheme5 {
+  /* Red_100 */
+  --color-background-b01: hsl(0, 50%, 18%);
+  --color-border-b01: hsl(0, 0%, 10%);
+  /* --color-h1-h6-b01: hsl(0, 79%, 91%); */
+  --color-h1-h6-b01: hsl(0, 50%, 96%);
+  --color-text-b01: hsl(78, 78%, 91%);
+  /* Red_90 */
+  --color-background-b02: hsl(0, 67%, 24%);
+  --color-border-b02: hsl(0, 0%, 10%);
+  --color-h1-h6-b02: hsl(0, 50%, 96%);
+  --color-text-b02: hsl(0, 0%, 80%);
+  --color-button-b02: hsl(0, 9%, 52%);
+  /* Red_10 */
+  --color-background-b03: hsl(0, 50%, 96%);
+  --color-border-b03: hsl(0, 0%, 10%);
+  --color-h1-h6-b03: hsl(0, 67%, 24%);
+  --color-text-b03: hsl(0, 0%, 0%);
+  /* Red_20 */
+  --color-background-a01: hsl(0, 79%, 91%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(0, 67%, 24%);
+  --color-text-a01: hsl(0, 0%, 10%);
+}
+
+/* Bat Cave*/
+.colorTheme6 {
+  /* Custom */
+  --color-background-b01: hsl(200, 20%, 10%);
+  --color-border-b01: hsl(200, 18%, 12%);
+  --color-h1-h6-b01: hsl(6, 80%, 45%);
+  --color-text-b01: hsl(0, 0%, 80%);
+  /* Custom */
+  --color-background-b02: hsl(200, 20%, 14%);
+  --color-border-b02: hsl(0, 0%, 0%);
+  --color-h1-h6-b02: hsl(6, 80%, 45%);
+  --color-text-b02: hsl(0, 0%, 80%);
+  --color-button-b02: hsl(0, 00%, 40%);
+  /* Custom */
+  --color-background-b03: hsl(200, 20%, 17%);
+  --color-border-b03: hsl(0, 0%, 0%);
+  --color-h1-h6-b03: hsl(6, 80%, 45%);
+  --color-text-b03: hsl(0, 0%, 80%);
+  /* Custom */
+  --color-background-a01: hsl(200, 20%, 25%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(6, 80%, 45%);
+  --color-text-a01: hsl(0, 0%, 80%);
+}
+
+/* Radium */
+.colorTheme7 {
+  /* Custom */
+  --color-background-b01: hsl(200, 18%, 12%);
+  --color-border-b01: hsl(0, 0%, 0%);
+  --color-h1-h6-b01: hsl(113, 80%, 45%);
+  --color-text-b01: hsl(0, 0%, 80%);
+  /* Custom */
+  --color-background-b02: hsl(203, 20%, 16%);
+  --color-border-b02: hsl(0, 0%, 0%);
+  --color-h1-h6-b02: hsl(113, 80%, 45%);
+  --color-text-b02: hsl(0, 0%, 80%);
+  --color-button-b02: hsl(217, 10%, 49%);
+  /* Custom */
+  --color-background-b03: hsl(200, 20%, 21%);
+  --color-border-b03: hsl(0, 0%, 0%);
+  --color-h1-h6-b03: hsl(113, 80%, 45%);
+  --color-text-b03: hsl(0, 0%, 80%);
+  /* Custom */
+  --color-background-a01: hsl(200, 18%, 25%);
+  --color-border-a01: hsl(0, 0%, 10%);
+  --color-h1-h6-a01: hsl(113, 80%, 45%);
+  --color-text-a01: hsl(0, 0%, 80%);
+}
+
+/* Manilla */
+.colorTheme8 {
+  /* Custom */
+  --color-background-b01: hsl(33, 80%, 88%);
+  --color-border-b01: hsl(0, 0%, 60%);
+  --color-h1-h6-b01: hsl(32, 62%, 12%);
+  --color-text-b01: hsl(33, 75%, 17%);
+  /* Custom */
+  --color-background-b02: hsl(33, 80%, 93%);
+  --color-border-b02: hsl(0, 0%, 60%);
+  --color-h1-h6-b02: hsl(32, 62%, 12%);
+  --color-text-b02: hsl(33, 75%, 17%);
+  --color-button-b02: hsl(33, 27%, 74%);
+  /* Custom */
+  --color-background-b03: hsl(33, 80%, 99%);
+  --color-border-b03: hsl(0, 0%, 60%);
+  --color-h1-h6-b03: hsl(32, 62%, 12%);
+  --color-text-b03: hsl(33, 75%, 17%);
+  /* Custom */
+  --color-background-a01: hsl(33, 80%, 93%);
+  --color-border-a01: hsl(0, 0%, 60%);
+  --color-h1-h6-a01: hsl(33, 87%, 22%);
+  --color-text-a01: hsl(33, 96%, 28%);
+}
+
+/* Transfer theme colors to layout elements */
+/* root */
+:root {
+
+  --header-background: var(--color-background-b01);
+  --header-border: var(--color-border-b01);
+  --header-h1-h6: var(--color-h1-h6-b01);
+  --header-text: var(--color-text-b01);
+
+  --aside-background: var(--color-background-b02);
+  --aside-border: var(--color-border-b02);
+  --aside-h1-h6: var(--color-h1-h6-b02);
+  --aside-text: var(--color-text-b02);
+  --button-background: var(--color-button-b02);
+
+  --main-background: var(--color-background-b03);
+  --main-border: var(--color-border-b03);
+  --main-h1-h6: var(--color-h1-h6-b03);
+  --main-text: var(--color-text-b03);
+
+  --footer-background: var(--color-background-b01);
+  --footer-border: var(--color-border-b01);
+  --footer-h1-h6: var(--color-h1-h6-b01);
+  --footer-text: var(--color-text-b01);
+
+  --card-background-1: var(--color-background-a01);
+  --card-border-1: var(--color-border-a01);
+  --card-h1-h6-1: var(--color-h1-h6-a01);
+  --card-text-1: var(--color-text-a01);
+
+  --shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.3);
+  /* creates a four sided shadow border */
+  --shadow-border: 0px 0px 8px hsla(0, 0%, 0%, 0.9);
+
+  /* blackscale (grayscale for LibreOffice) */
+  --white: #ffffff;
+  --black10: #e6e6e6;
+  --black20: #cccccc;
+  --black30: #b3b3b3;
+  --black40: #999999;
+  --black50: #808080;
+  --black60: #666666;
+  --black70: #4d4d4d;
+  --black80: #333333;
+  --black90: #1a1a1a;
+  --black100: #000000;
+
+  /* grayscale */
+  --black: #000000;
+  --gray10: #1a1a1a;
+  --gray20: #333333;
+  --gray30: #4d4d4d;
+  --gray40: #666666;
+  --gray50: #808080;
+  --gray60: #999999;
+  --gray70: #b3b3b3;
+  --gray80: #cccccc;
+  --gray90: #e6e6e6;
+  --white: #ffffff;
+}
