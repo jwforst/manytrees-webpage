@@ -1,3 +1,3 @@
-# vpd-webpage-starter
+# manytrees-webpage
 
-This repository is a base starting point for viewportDocs.com development and testing.
+This repository is a base starting point for manytrees.us webpage development and testing.
